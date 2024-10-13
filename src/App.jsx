@@ -39,7 +39,7 @@ import Service from './components/Service';
 
 function App() {
   return (
-    <div>
+    <div >
       <Navbar />
       <section id="hero">
         <Hero />

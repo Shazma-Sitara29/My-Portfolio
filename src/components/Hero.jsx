@@ -1,15 +1,15 @@
 import React from 'react';
-import HeroImage from '../assets/hero-image.png';
+
 import { TypeAnimation } from 'react-type-animation';
 import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
-    <div className='bg-black text-white text-center py-16 font-serif'>
+    <div className='text-white text-center  mt-20 py-20 font-serif'>
       <img
-        src={HeroImage}
+        src="https://i.pinimg.com/736x/16/59/1b/16591b1725c63b6eac3f816ed8da5d3f.jpg"
         alt=''
-        className='mx-auto mb-8 w-48 h-48 rounded-full object-cover transform 
+        className='mx-auto mb-8 w-60 h-60 rounded-2xl object-cover transform 
         transition-transform duration-300 hover:scale-105'
       />
       <h1 className='text-4xl font-bold'>

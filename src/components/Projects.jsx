@@ -1,6 +1,4 @@
 import React from "react";
- 
-import bookMSImage from "../assets/admin-dashboard.png";
 
 const projects = [
   {
@@ -12,9 +10,9 @@ const projects = [
   },
   {
     id: 2,
-    name: "Blog App",
+    name: "Authentication",
     technologies: "MERN Stack",
-    image: bookMSImage,
+    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPfpLvWOQkhX9s0KGsKhnT1FtZdLirxzheM6Dn7HINrKg2H1Rp-LzwmK1QK7JXa1XKLS4&usqp=CAU",
     github: "https://github.com/",
   },
   {
@@ -28,7 +26,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="bg-black text-white py-20 font-serif" id="project">
+    <div className=" text-white mt-20 py-20 font-serif" id="project">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -51,3 +49,18 @@ const Projects = () => {
 };
 
 export default Projects;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

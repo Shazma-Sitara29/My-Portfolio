@@ -1,31 +1,34 @@
 import React from "react";
 import { motion } from 'framer-motion';
-import AboutImage from "../assets/aboutme-image.png";
+
 
 const About = () => {
   return (
-    <div className="bg-black text-white py-20 font-serif" id="about">
+    <div className=" text-white mt-20 py-20 font-serif" id="about">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
           <img
-            src={AboutImage}
+            src="https://www.ntc.edu/sites/default/files/styles/full_width_16_9/public/2021-06/web-design-header.jpg?itok=4d7TmUMl"
             alt=""
-            className="w-72 h-80 rounded object-cover mb-8 md:mb-0"
+            className="w-80 h-80 rounded object-cover mb-8 md:mb-0"
           />
           <div className="flex-1">
-            <p className="text-lg mb-8">
+            <p className="text-lg mb-8 text-center">
+            Pursuing a Bachelor of Science in Computer Science (BSCS) from Federal Urdu University, specializing in software development, algorithms, and modern web technologies. Gaining hands-on experience through academic projects and coursework in data structures, programming, and database management.
+            </p>
+            <p className="text-lg mb-8 text-center">
               I am a passionate frontend-stack developer with a focus on building
               modern and responsive web applications. With a strong foundation
               in both frontend and backend technologies, I strive to create
               seamless and efficient user experiences.
             </p>
-            <div className="space-y-4">
+            <div className="space-y-6">
       <div className="flex items-center">
         <label htmlFor="htmlandcss" className="w-2/12">
           HTML & CSS
         </label>
-        <div className="grow bg-gray-800 rounded-full h-2.5 relative">
+        <div className="grow bg-gray-800 rounded-full h-3. relative">
           <motion.div
             className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full"
             initial={{ width: 0 }}
@@ -94,3 +97,9 @@ const About = () => {
 };
 
 export default About;
+
+
+
+
+
+
