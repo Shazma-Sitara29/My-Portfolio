@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { FaBars } from 'react-icons/fa';
@@ -19,26 +18,26 @@ const Navbar = () => {
   };
 
   return (
-    <nav ref={navbarRef} className='bg-black text-white border-b border-gray-700 px-8 md:px-16 lg:px-24 py-2 fixed top-0 w-full  z-50 font-serif'>
+    <nav ref={navbarRef} className='bg-black text-white border-b border-gray-700 px-8 md:px-16 lg:px-24 py-2 fixed top-0 w-full z-50 font-serif'>
       <div className='container mx-auto flex justify-between items-center'>
         {/* Logo */}
         <div className='text-2xl font-bold'>Shazma Sitara</div>
 
         {/* Desktop Navigation */}
         <div className='hidden md:flex space-x-6 text-xl'>
-          <ScrollLink to="hero" smooth={true} duration={500} className='hover:text-gray-400 cursor-pointer'>
+          <ScrollLink to="hero" smooth={true} duration={500} offset={-navbarHeight} className='hover:text-gray-400 cursor-pointer'>
             Home
           </ScrollLink>
-          <ScrollLink to="about" smooth={true} duration={500} className='hover:text-gray-400 cursor-pointer'>
+          <ScrollLink to="about" smooth={true} duration={500} offset={-navbarHeight} className='hover:text-gray-400 cursor-pointer'>
             About Me
           </ScrollLink>
-          <ScrollLink to="service" smooth={true} duration={500} className='hover:text-gray-400 cursor-pointer'>
+          <ScrollLink to="service" smooth={true} duration={500} offset={-navbarHeight} className='hover:text-gray-400 cursor-pointer'>
             Services
           </ScrollLink>
-          <ScrollLink to="projects" smooth={true} duration={500} className='hover:text-gray-400 cursor-pointer'>
+          <ScrollLink to="projects" smooth={true} duration={500} offset={-navbarHeight} className='hover:text-gray-400 cursor-pointer'>
             Projects
           </ScrollLink>
-          <ScrollLink to="contact" smooth={true} duration={500} className='hover:text-gray-400 cursor-pointer'>
+          <ScrollLink to="contact" smooth={true} duration={500} offset={-navbarHeight} className='hover:text-gray-400 cursor-pointer'>
             Contact
           </ScrollLink>
         </div>
@@ -88,19 +87,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
